@@ -59,11 +59,6 @@ async function go() {
     user.send(msg).then(() => {
       count++
       console.log(main(`[${count}/${amount}] `) + white('Sent message to ') + main(usez.username))
-      if (count = (amount -  1)) {
-        console.clear();
-        console.log('Done!')
-        return
-      }
     }).catch(() => {
       console.log(main(`[?/${amount}] `) + white('Faild to send message to ') + main(usez.username))
     })
